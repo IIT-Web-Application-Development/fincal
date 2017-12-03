@@ -1,5 +1,5 @@
 body {
-    color: white;
+    color: black;
   }
 
   body, h1, p {
@@ -17,6 +17,7 @@ body {
 }
 
 .NameBorder {
+    color: white;
     display: inline-block;
     background-color: #03A9F4;
     margin-left:  25px;
