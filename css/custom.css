@@ -34,7 +34,7 @@ body {
     -o-transition-duration: 0.3s;
     transition-duration: 0.3s;
     transition: all 0.3s ease-out;
-   
+    box-sizing: border-box;
   }
 
 .menIcon {
@@ -54,3 +54,5 @@ body {
     color: black;
     margin-top: 5%;
 }
+
+
