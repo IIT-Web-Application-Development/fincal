@@ -1,0 +1,44 @@
+body {
+    color: white;
+  }
+
+  body, h1, p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+.BorderWrapper {
+    width: 100%;
+    margin-left: auto auto auto 0;
+    margin-right: auto;   
+}
+
+.NameBorder {
+    display: inline-block;
+    background-color: #03A9F4;
+    margin-left:  25px;
+    margin-right:  25px;
+    margin-top: 5%;
+    width: 230px;
+    /*Changes the padding inside the box*/
+    padding-top:10px;
+    padding-bottom: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 30px;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    transition: all 0.3s ease-out;
+   
+  }
+
+  .img {
+    border-radius: 50%;
+    max-height: 150px;
+    max-width: 150px;
+}
