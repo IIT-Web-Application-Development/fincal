@@ -12,7 +12,8 @@ body {
 .BorderWrapper {
     width: 100%;
     margin-left: auto auto auto 0;
-    margin-right: auto;   
+    margin-right: auto;  
+    text-align: center;
 }
 
 .NameBorder {
