@@ -7,7 +7,6 @@ body {
     font-weight: normal;
     margin: 0;
     padding: 0;
-    text-align: center;
   }
 
 .BorderWrapper {
@@ -36,6 +35,7 @@ body {
     transition-duration: 0.3s;
     transition: all 0.3s ease-out;
     box-sizing: border-box;
+    text-align: center;
   }
 
 .menIcon {
@@ -54,11 +54,13 @@ body {
     font-size: 50px;
     color: black;
     margin-top: 5%;
+    text-align: center;
 }
 
 footer{
     color: grey;
     margin-top: 70px;
     opacity: 0.5;
+    text-align: center;
 }
 
