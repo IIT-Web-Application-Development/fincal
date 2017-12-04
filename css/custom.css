@@ -223,3 +223,21 @@ input#bill-total {
     margin-left: 30px;
     padding-bottom: 20px;
   }
+
+  .tip-per-person {
+    font-weight: 700;
+  }
+
+  .tip-total-container span {
+    font-size: 35px;
+    display: block;
+    margin-left: 30px;
+  }
+
+  #total-without-tip,
+  #total-tip,
+  #total-with-tip {
+    margin-right: 50px;
+    float: right;
+    font-weight: 400;
+  }
