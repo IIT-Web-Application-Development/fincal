@@ -309,4 +309,8 @@ input.savingsin{
     outline: 0;
   }
 
-  
+  input[type="submit"].button-primary{
+    background-color: white;
+    color:black;
+    font-size: 15px;
+  }
