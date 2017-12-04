@@ -7,6 +7,8 @@ var splitTotal =1;
 var tipPercent =10;
 var totalTip;
 var withoutTip;
+var withTip;
+var perPersonTip;
 
 document.getElementById("bill-total").addEventListener("keyup", function() {/*When user finished typing*/
     bill = document.getElementById("bill-total").value;/*Take in value*/
@@ -38,6 +40,15 @@ function calculate() {/*Main function to calculate everything.*/
         withoutTip /*update html */
     ).toFixed(2)}`;
 
+    withTip = perPersonTip + withoutTip; /*calc total with tip included*/
+    document.getElementById("total-with-tip").innerHTML = `$ ${parseFloat(
+      withTip
+    ).toFixed(2)}`;
+
+    perPersonTip = totalTip / splitTotal;/*Get the per person tip*/
+    document.getElementById("total-tip-per-person").innerHTML = `$ ${parseFloat(
+      perPersonTip
+    ).toFixed(2)}`;
 
 }
 
