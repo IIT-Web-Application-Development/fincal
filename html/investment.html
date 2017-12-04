@@ -36,48 +36,14 @@
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="container">
-    <div class="row">
-        <div class="title"> Investment Calculator</div>
-        <p>Type in your starting amount, the interest, and the time (calculated in years) you want to calculate it for.</p>
-        <div class="Inputs">
-          <table class="inputTable">
-            <tbody>
-              <tr>
-                <td>
-                <div class="StartingInvestment">
-                  <div class="label">Starting Amount:</div>
-                    <span class="dollarSpan">
-                      <input type="text" id="dollar" placeholder="0.00">
-                    </span>
-                </div>
-                </td>
-                <td>
-                  <div class="InvestmentRate">
-                    <div class="label">Investment Rate:</div>
-                    <span class="percentageSpan">
-                      <input type="text" id="percentage" placeholder="0.0">
-                    </span>
-                  </div>
-                </td>
-                <td>
-                  <div class="Years">
-                    <div class="label">Years:</div>
-                      <span class="yearsSpan">
-                        <input type="text" id="year" placeholder="0">
-                      </span>
-                  </div>
-                </td>
-                <td>
-                  <div class="Calculate">
-                    <button id=CalculateButton onclick="calculate()">Calculate</button>
-                  </div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
+  <div class="table">
+    <h1>Investment Calculator</h1>
+      <form id="inputForm">
+      <label>Starting amount</label>
+        <span class="dollarSpan">
+          <input type="text" id="starting" size=20 style="float: left;" placeholder="0.00">
+        </span>
+      </form>
   </div>
 
   <!-- JS
@@ -85,7 +51,7 @@
   <script type="text/javascript">
       //Getting inputs
       function calculate(){
-        var startingAmount = parseFloat(document.getElementById('dollar'));
+        var startingAmount = parseFloat(document.getElementById('starting'));
         var rate = parseFloat(document.getElementById('percentage'));
         var years = parseFloat(document.getElementById('year'));
         console.log(startingAmount+rate);

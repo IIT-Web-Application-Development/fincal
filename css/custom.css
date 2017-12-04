@@ -262,91 +262,7 @@ input#bill-total {
 
 <<<<<<< HEAD
 
-  <!-- Investment Calculator CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
-
-.dollarSpan {
-    position: relative;
-}
-
-.dollarSpan input{
-    border:1;
-}
-
-.dollarSpan:before{
-    position: absolute;
-    content: "$";
-    left: 0;
-    padding-right: 0;
-    border-right: 0;
-    border-left: 0;
-    padding-left: 0;
-}
-
-.percentageSpan {
-    position: relative;
-}
-
-.percentageSpan input{
-    border: 1;
-}
-
-.percentageSpan:before{
-    position: absolute;
-    content: "%";
-    right: 0;
-    padding-left: 0;
-    border-left: 0;
-        border-left-width: 0;
-        border-left-style: initial;
-        border-left-color: initial;
-    border-right: 2;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  
 
 =======
   .tipicon{
@@ -355,3 +271,103 @@ input#bill-total {
     margin: auto;
   }
 >>>>>>> 6b1d791699bc263b26d4fc447272136cd70109ed
+
+
+
+
+
+
+
+/*-- Investment Calculator CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
