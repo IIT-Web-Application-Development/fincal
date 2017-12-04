@@ -105,16 +105,18 @@ footer{
 .calculator-container {
     width: 500px;
     height: 600px;
-    background-color: black;
+    background-color: #333;
     margin: 10px auto;
+    border-radius: 30px 30px 0 0;
   }
 
   .big-container {
     height: 160px;
+    border-radius: 30px 30px 0 0 ;
   }
 
   .bill-amount-container {
-    background-color: #058bec;
+    background-color: #C62828;
   }
 
   .split-container {
@@ -141,7 +143,7 @@ input#bill-total {
     font-size: 55px;
     width: 250px;
     height: 55px;
-    background-color: #058bec;
+    background-color: #C62828;
     border: none;
     color: white;
     outline: 0;
@@ -202,10 +204,11 @@ input#bill-total {
   }
 
   .tip-total-container {
-    background-color: #058bec;
+    background-color: #C62828;
     height: 116px;
     padding-top: 20px;
     color: white;
+    border-radius: 0px 0px 30px 30px;
   }
 
   .bill-amount {
@@ -257,3 +260,6 @@ input#bill-total {
     font-weight: 400;
   }
   
+  ::placeholder{
+    color: white;
+  }
