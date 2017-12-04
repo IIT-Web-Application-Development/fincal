@@ -37,25 +37,30 @@
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+
+  <!--layout design ideas where inspired by codepen.io examples-->
   <div class="calculator-container">
     <div class="bill-amount-container big-container"> <!--Top portion-->
-      <span class="bill-amount">Bill Amount</span>
+      <span class="bill-amount">Total Amount</span>
         <span class="dollarSign">$</span>
         <input type="text" id="bill-total" maxlength="7" placeholder="0.00">
     </div>
     
   <div class="split-container big-container"> <!-- Split tip among people -->
-    <span class="split"><i class="fa fa-users" aria-hidden="true"></i> Split Between:</span>
-      <i class="fa fa-plus" id="add-people" aria-hidden="true"></i> <span id="split-amount">1</span><span class="people">PPL</span> <i class="fa fa-minus" id="minus-people" aria-hidden="true"></i>
+    <img class="tipicon" src="../img/team.png">
+    <span class="split"> Split Between:</span>
+    <i class="fa fa-minus" id="minus-people" aria-hidden="true"></i><span id="split-amount">1</span><span class="people">PPL</span><i class="fa fa-plus" id="add-people" aria-hidden="true"></i> 
+      
   </div>
 
   <div class="tip-percentage-container small-container">
+      <img class="tipicon" src="../img/percent.png">
     <span class="tip-container">Tip Percentage:</span>
-      <i class="fa fa-plus" id="add-percent" aria-hidden="true"></i>
+    <i class="fa fa-minus" id="minus-percent" aria-hidden="true"></i>
     <span id="percentage">10%</span>
-      <i class="fa fa-minus" id="minus-percent" aria-hidden="true"></i>
+      <i class="fa fa-plus" id="add-percent" aria-hidden="true"></i>
   </div>
-
 
   <div class="totals-container big-container">
     <div class="total">
