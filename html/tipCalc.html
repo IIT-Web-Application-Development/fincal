@@ -35,9 +35,27 @@
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="BorderWrapper">
-    <div class="NameBorder">
-      <p>test</p>
+  <div class="tipwrapper">
+    <h3 class="tipheading">Tip Calculator</h3>
+    <div class="tipborder">
+      <form class="calculator">
+        <div class="calculator__row">
+          <label for="bill">enter the bill amount for your meal: $</label>
+          <input type="text" id="bill" class="calculator__bill" value="5" required/>
+        </div>
+        <div class="calculator__row">
+          <label for="tip">tip amount: 
+            <label id="text">0</label>
+          </label>
+          <br>
+          <br>
+            <input type="range" min="0" max="100" value="0" step="1" class="calculator__tip" id="tip" required/>
+        </div>
+        <div class="calculator__row">
+          <h2 class="calculator__info">tip to leave: <span class="calculator__result"></span></h2>
+        </div>
+      </form>
+
     </div>
   </div>
 
