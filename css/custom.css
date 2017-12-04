@@ -109,4 +109,16 @@ footer{
     margin: 10px auto;
   }
 
+  .big-container {
+    height: 160px;
+  }
+
+  .bill-amount-container {
+    background-color: black;
+  }
+
+  .split-container {
+    text-align: center;
+  }
+
   
