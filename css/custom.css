@@ -16,6 +16,7 @@ body {
     text-align: center;
 }
 
+/*Stuff for index menu*/
 .NameBorder {
     color: white;
     display: inline-block;
@@ -64,4 +65,41 @@ footer{
     opacity: 0.5;
     text-align: center;
 }
+
+/*End of stuff for index menu*/
+
+
+
+/*Stuff for navigation bar*/
+.navbar {
+    text-align: center;
+} 
+
+.outsidebox {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    font-size: 35px; 
+    text-align: center;
+}
+
+.insidebox a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 10px;
+    text-decoration: none;
+}
+
+.insidebox img {
+    height: 45px;
+    margin-right: 15px;
+    margin-bottom: -10px;
+}
+
+
+
+
 
