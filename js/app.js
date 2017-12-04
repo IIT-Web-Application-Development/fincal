@@ -2,9 +2,9 @@
 $('#navbar').load('navbar.html');
 
 /*Tip Calc Stuff*/
-var bill;
-var splitTotal =1;
-var tipPercent =10;
+var bill = 0;
+var splitTotal = 1;
+var tipPercent = 10;
 var totalTip;
 var withoutTip;
 var withTip;
@@ -40,14 +40,16 @@ function calculate() {/*Main function to calculate everything.*/
         withoutTip /*update html */
     ).toFixed(2)}`;
 
-    withTip = perPersonTip + withoutTip; /*calc total with tip included*/
-    document.getElementById("total-with-tip").innerHTML = `$ ${parseFloat(
-      withTip
-    ).toFixed(2)}`;
-
+    
     perPersonTip = totalTip / splitTotal;/*Get the per person tip*/
     document.getElementById("total-tip-per-person").innerHTML = `$ ${parseFloat(
       perPersonTip
+    ).toFixed(2)}`;
+
+
+    withTip = perPersonTip + withoutTip; /*calc total with tip included*/
+    document.getElementById("total-with-tip").innerHTML = `$ ${parseFloat(
+      withTip
     ).toFixed(2)}`;
 
 }
