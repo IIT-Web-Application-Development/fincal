@@ -91,3 +91,10 @@ document.getElementById("add-people").addEventListener("click", function() {
 calculate();
 
 /*END OF TIP CALC STUFF*/
+
+/*SAVINGS CALC STUFF*/
+
+
+
+
+/*END OF SAVINGS*/
