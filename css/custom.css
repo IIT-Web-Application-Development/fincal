@@ -100,6 +100,159 @@ footer{
 }
 
 
+/*Stuff for tip calculator*/
 
+.calculator-container {
+    width: 500px;
+    height: 800px;
+    background-color: black;
+    margin: 10px auto;
+  }
 
+  .big-container {
+    height: 160px;
+  }
 
+  .bill-amount-container {
+    background-color: #058bec;
+  }
+
+  .split-container {
+    text-align: center;
+    font-size: 25px;
+    color: white;
+  }
+
+  .dollarSign {
+    font-size: 55px;
+    display: inline-block;
+    margin-left: 100px;
+    color: white;
+  }
+
+.people {
+  font-size: 20px;
+}
+
+input#bill-total {
+    display: inline-block;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 55px;
+    width: 250px;
+    height: 55px;
+    background-color: #058bec;
+    border: none;
+    color: white;
+    outline: 0;
+  }
+
+  input:focus::-webkit-input-placeholder {
+    color: transparent;
+  }
+
+  i.fa.fa-plus,
+  i.fa.fa-minus {
+    font-size: 30px;
+    margin: 0 10px;
+    cursor: pointer;
+  }
+  i.fa.fa-plus:hover,
+  i.fa.fa-minus:hover {
+    color: white;
+  }
+  i.fa.fa-plus {
+    margin-left: 50px;
+  }
+
+  .bill-amount {
+    display: block;
+    margin-left: 50px;
+    padding-top: 30px;
+    font-weight: 700;
+    color: white;
+  }
+
+  #split-amount {
+    font-size: 30px;
+  }
+
+  .small-container {
+    height: 100px;
+  }
+
+  .tip-percentage-container {
+    text-align: center;
+    color: white;
+  }
+
+  .tip-container {
+    font-size: 25px;
+    line-height: 100px;
+  }
+
+  #percentage {
+    font-size: 30px;
+  }
+
+  .totals-container {
+    font-weight: 500;
+    color: white;
+  }
+
+  .tip-total-container {
+    background-color: #058bec;
+    height: 116px;
+    padding-top: 20px;
+    color: white;
+  }
+
+  .bill-amount {
+    display: block;
+    margin-left: 50px;
+    padding-top: 30px;
+    font-weight: 500;
+  }
+
+  .split {
+    font-size: 30px;
+    line-height: 160px;
+  }
+
+  #split-amount {
+    font-size: 50px;
+  }
+
+  .total {
+    margin-left: 30px;
+    padding-bottom: 20px;
+    font-size: 17px;
+  }
+
+  .tip-per-person {
+    font-weight: 500;
+  }
+
+  .tip-total-container span {
+    font-size: 25px;
+    display: block;
+    margin-left: 30px;
+  }
+
+  #total-without-tip,
+  #total-tip,
+  #total-with-tip {
+    margin-right: 50px;
+    float: right;
+    font-weight: 300;
+
+  }
+
+  #total-tip-per-person {
+    text-align: center;
+    font-size: 40px;
+    position: relative;
+    top: 5px;
+    font-weight: 400;
+  }
+  

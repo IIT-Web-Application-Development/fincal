@@ -1,2 +1,2 @@
-//Loads the nave bar in the pages.
+//Loads the nav bar in the pages.
 $('#navbar').load('navbar.html');
