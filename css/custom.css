@@ -266,7 +266,6 @@ input#bill-total {
     margin: auto;
   }
 
-
 /*SAVINGS CALC*/
 
   .savingHead{
@@ -300,7 +299,6 @@ input.savingsin{
     outline: 0;
   }
 
-
   .dropdown{
     margin-top: -50px;
     height: 55px;
@@ -311,4 +309,8 @@ input.savingsin{
     outline: 0;
   }
 
-  
+  input[type="submit"].button-primary{
+    background-color: white;
+    color:black;
+    font-size: 15px;
+  }

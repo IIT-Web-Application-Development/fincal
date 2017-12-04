@@ -91,3 +91,20 @@ document.getElementById("add-people").addEventListener("click", function() {
 calculate();
 
 /*END OF TIP CALC STUFF*/
+
+/*SAVINGS CALC STUFF*/
+
+function spendingOne() {/*get total number of people from UI*/
+    document.getElementById("split-amount").innerHTML = splitTotal;   
+}
+
+
+function savingsCalc() {
+    console.log("Test")
+
+
+
+}
+
+
+/*END OF SAVINGS*/
