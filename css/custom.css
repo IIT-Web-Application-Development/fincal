@@ -119,6 +119,58 @@ footer{
 
   .split-container {
     text-align: center;
+    font-size: 25px;
   }
 
-  
+  .dollarSign {
+    font-size: 45px;
+    display: inline-block;
+    margin-left: 100px;
+    color: white;
+  }
+
+.people {
+  font-size: 20px;
+}
+
+input#bill-total {
+    display: inline-block;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 40px;
+    width: 250px;
+    background-color:white;
+    border: none;
+    color: black;
+    outline: 0;
+  }
+
+  input:focus::-webkit-input-placeholder {
+    color: transparent;
+  }
+
+  i.fa.fa-plus,
+  i.fa.fa-minus {
+    font-size: 30px;
+    margin: 0 10px;
+    cursor: pointer;
+  }
+  i.fa.fa-plus:hover,
+  i.fa.fa-minus:hover {
+    color: black;
+  }
+  i.fa.fa-plus {
+    margin-left: 50px;
+  }
+
+  .bill-amount {
+    display: block;
+    margin-left: 50px;
+    padding-top: 30px;
+    font-weight: 700;
+    color: white;
+  }
+
+  #split-amount {
+    font-size: 30px;
+  }

@@ -19,6 +19,7 @@
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="../css/fontawesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="../css/normalize.css">
   <link rel="stylesheet" href="../css/skeleton.css">
   <link rel="stylesheet" href="../css/custom.css">
@@ -26,6 +27,7 @@
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/favicon.png">
+
 
 </head>
 <body>
@@ -37,10 +39,20 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="calculator-container">
     <div class="bill-amount-container big-container"> <!--Top portion-->
+      <span class="bill-amount">Bill Amount</span>
         <span class="dollarSign">$</span>
         <input type="text" id="bill-total" maxlength="7" placeholder="0.00">
     </div>
     
+  <div class="split-container big-container"> <!-- Split tip among people -->
+    <span class="split"><i class="fa fa-users" aria-hidden="true"></i> Split Between:</span>
+      <i class="fa fa-plus" id="add-people" aria-hidden="true"></i> <span id="split-amount">1</span><span class="people">PPL</span> <i class="fa fa-minus" id="minus-people" aria-hidden="true"></i>
+  </div>
+
+
+
+
+
   </div>
 
   <!-- JS
