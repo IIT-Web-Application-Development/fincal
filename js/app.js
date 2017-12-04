@@ -10,11 +10,16 @@ document.getElementById("bill-total").addEventListener("keyup", function() {/*Wh
     calculate();
   });
 
-function split() {
+function split() {/*get total number of people from UI*/
     document.getElementById("split-amount").innerHTML = splitTotal;      
+}
+
+function tip() {/*get tip percent form UI*/
+    document.getElementById("percentage").innerHTML = `${tipPercent}%`;
 }
 
 
 function calculate() {/*Main function to calculate everything.*/
     split();
+    tip();
 }
