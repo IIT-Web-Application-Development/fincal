@@ -60,6 +60,7 @@ document.getElementById("add-people").addEventListener("click", function() {
     } else {
       splitTotal = 1;
     }
+    calculate();
   });
   document.getElementById("minus-people").addEventListener("click", function() {
     if (splitTotal > 1) {
@@ -67,6 +68,7 @@ document.getElementById("add-people").addEventListener("click", function() {
     } else {
       splitTotal = 99;
     }
+    calculate();
   });
   document.getElementById("add-percent").addEventListener("click", function() {
     if (tipPercent < 100) {
@@ -74,6 +76,7 @@ document.getElementById("add-people").addEventListener("click", function() {
     } else {
       tipPercent = 0;
     }
+    calculate();
   });
   document.getElementById("minus-percent").addEventListener("click", function() {
     if (tipPercent > 0) {
@@ -81,7 +84,7 @@ document.getElementById("add-people").addEventListener("click", function() {
     } else {
       tipPercent = 100;
     }
-  
+    calculate();
   });
 
 
