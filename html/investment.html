@@ -28,14 +28,14 @@
   <link rel="icon" type="image/png" href="../img/plant.png">
       <style type="text/css">
             body{
-              width: 600px; 
-              border: 2px solid; 
+              width: 550px;  
               margin: 50px auto; 
             }
 
             .investment-table {
               background-color: green; 
               padding: 60px 25px;
+              border-radius: 30px 30px 30px 30px;
             }
 
             label {
@@ -45,13 +45,15 @@
 
             input {
               width: 200px;
+              font-size: 20px;
             }
 
             button{
               float: left; 
               width: auto;
               background-color: #ffffff;
-              padding: 2px 3px 3px 3px;
+              padding: 2px 3px 3px 3px; 
+              border-radius: 15px 15px 15px 15px;
               margin: 10px;
             }
 
@@ -78,15 +80,15 @@
     <p>This calculator can be used to calculate the end value of your investment.</p><br/><br/>
       <form id="inputForm">
       <label>Starting amount</label>
-        <input type="text" id="starting" size=20>
+        <input type="text" id="starting" name="starting"><br/>
       <label>Investment Rate</label>
-        <input type="text" id="percentage" size=20>
+        <input type="text" id="percentage"><br/>
       <label>Number of years</label>
-        <input type="text" id="year" size=20>
+        <input type="text" id="year"><br/>
       </form>
       <!-- buttons -->
-      <button type="button" onclick="calculate()">Calculate Investment</button>
-      <button type="button" id="button1" onclick="clear()">Clear Table</button>
+        <button type="button" onclick="calculate()">Calculate Investment</button>
+        <button type="button" id="button1" onclick="clear()">Clear Table</button>
       <!-- output -->
 
       <div class="output"></div>
@@ -95,9 +97,15 @@
   <!-- JS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <script type="text/javascript">
-    console.log(document.getElementById("dollar").value);
+  function calculate(){
+    // ------------------- Grabbing Inputs -------------
+    var starting = document.getElementById('starting');
+    var rate = parseFloat(document.getElementById('percentage'));
+    var years = parseFloat(document.getElementById('year'));
+
+    console.log(2);
+  }
   </script>
-  <script type="text/javascript" src="../js/app.js"></script>
   <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
