@@ -104,7 +104,7 @@ footer{
 
 .calculator-container {
     width: 500px;
-    height: 800px;
+    height: 600px;
     background-color: black;
     margin: 10px auto;
   }
@@ -171,6 +171,7 @@ input#bill-total {
     padding-top: 30px;
     font-weight: 700;
     color: white;
+    font-size: 25px;
   }
 
   #split-amount {
@@ -178,7 +179,7 @@ input#bill-total {
   }
 
   .small-container {
-    height: 100px;
+    height: 130px;
   }
 
   .tip-percentage-container {
@@ -192,7 +193,7 @@ input#bill-total {
   }
 
   #percentage {
-    font-size: 30px;
+    font-size: 40px;
   }
 
   .totals-container {
@@ -215,12 +216,12 @@ input#bill-total {
   }
 
   .split {
-    font-size: 30px;
+
     line-height: 160px;
   }
 
   #split-amount {
-    font-size: 50px;
+    font-size: 40px;
   }
 
   .total {
