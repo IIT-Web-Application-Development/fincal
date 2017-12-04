@@ -55,32 +55,32 @@ function calculate() {/*Main function to calculate everything.*/
 }
 
 document.getElementById("add-people").addEventListener("click", function() {
-    if (splitTotal < 99) {
-      splitTotal++;
+    if (splitTotal < 99) {/*set range between 1-99*/
+      splitTotal++; /*increase splitTotal var*/
     } else {
       splitTotal = 1;
     }
     calculate();
   });
   document.getElementById("minus-people").addEventListener("click", function() {
-    if (splitTotal > 1) {
-      splitTotal--;
+    if (splitTotal > 1) {/*set range between 1-99*/
+      splitTotal--;/*decrease splitTotal var*/
     } else {
       splitTotal = 99;
     }
     calculate();
   });
   document.getElementById("add-percent").addEventListener("click", function() {
-    if (tipPercent < 100) {
-      tipPercent++;
+    if (tipPercent < 100) {/*set range between 1-100*/
+      tipPercent++;/*increase splitTotal var*/
     } else {
       tipPercent = 0;
     }
     calculate();
   });
   document.getElementById("minus-percent").addEventListener("click", function() {
-    if (tipPercent > 0) {
-      tipPercent--;
+    if (tipPercent > 0) {/*set range between 1-100*/
+      tipPercent--;/*decrease splitTotal var*/
     } else {
       tipPercent = 100;
     }
@@ -89,3 +89,5 @@ document.getElementById("add-people").addEventListener("click", function() {
 
 
 calculate();
+
+/*END OF TIP CALC STUFF*/
