@@ -124,7 +124,7 @@ footer{
   }
 
   .dollarSign {
-    font-size: 45px;
+    font-size: 55px;
     display: inline-block;
     margin-left: 100px;
     color: white;
@@ -138,9 +138,10 @@ input#bill-total {
     display: inline-block;
     text-align: center;
     margin-top: 10px;
-    font-size: 40px;
+    font-size: 55px;
     width: 250px;
-    background-color:white;
+    height: 55px;
+    background-color: #058bec;
     border: none;
     color: white;
     outline: 0;
