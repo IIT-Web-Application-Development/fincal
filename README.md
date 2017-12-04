@@ -1,5 +1,5 @@
 # fincal
-Feng Li, Uriel Duran, Antonio PatlaN
+Feng Li, Uriel Duran, Antonio Patlan
 Team 4
 ## A quick finance tool app that lets you do various things with calculating money.
 
