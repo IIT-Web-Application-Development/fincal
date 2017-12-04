@@ -11,3 +11,7 @@ document.getElementById("bill-total").addEventListener("keyup", function() {/*Wh
   });
 
 document.getElementById("split-amount").innerHTML = splitTotal;
+
+function calculate() {/*Main function to calculate everything.*/
+    
+}
