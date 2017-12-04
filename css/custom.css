@@ -102,69 +102,11 @@ footer{
 
 /*Stuff for tip calculator*/
 
-.tipwrapper {
-    width: 100%;
-    margin-left: auto auto auto 0;
-    margin-right: auto;  
-    text-align: center;
-}
-
-.tipborder {
-    color: black;
-    display: inline-block;
-    background-color: white;
-    margin-left:  25px;
-    margin-right:  25px;
-    margin-top: 1%;
-    width: 600px;
-    height: 500px;
-    /*Changes the padding inside the box*/
-    padding-top:10px;
-    padding-bottom: 20px;
-    padding-right: 10px;
-    padding-left: 10px;
-    border-radius: 10px;
-    box-sizing: border-box;
-    text-align: center;
+.calculator-container {
+    width: 500px;
+    height: 800px;
+    background-color: #111d2d;
+    margin: 10px auto;
   }
 
-  .tipheading{
-      padding-top: 30px;
-  }
-
-.wrapper__title {
-    text-transform: capitalize;
-    margin: 0 0 40px;
-}
-
-.calculator__row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 0 30px;
-}
-
-.calculator__row label {
-    text-transform: capitalize;
-    font-weight: 700;
-}
-
-.calculator__bill {
-    width: 50%;
-}
-
-.calculator__tip {
-    width: 60%;
-}
-
-.calculator__info {
-    text-transform: capitalize;
-    margin: 0;
-}
-
-/*SLIDER*/
-
-$shade-10: #2c3e50 !default;
-$shade-1: #d7dcdf !default;
-$shade-0: #fff !default;
-$teal: #1abc9c !default;
+  
