@@ -260,16 +260,12 @@ input#bill-total {
     color: white;
   }
 
-<<<<<<< HEAD
-
-  
-
-=======
   .tipicon{
     padding-top:20px;
     display: block;
     margin: auto;
   }
+<<<<<<< HEAD
 >>>>>>> 6b1d791699bc263b26d4fc447272136cd70109ed
 
 
@@ -278,96 +274,48 @@ input#bill-total {
 
 
 
-/*-- Investment Calculator CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+=======
+
+/*SAVINGS CALC*/
+
+  .savingHead{
+    color:white;
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  .big-containerSav {
+    height: 100px;
+    border-radius: 30px 30px 0 0 ;
+  }
+
+  .tip-save-container {
+    color: black;
+    text-align: center;
+    height: 300px;
+  }
+
+input.savingsin{
+    display: inline-block;
+    text-align: center;
+    margin-top: 10px;
+    margin-right:20px;
+    font-size: 28px;
+    width: 170px;
+    height: 55px;
+    background-color: #C62828;
+    border: none;
+    color: white;
+    outline: 0;
+  }
+>>>>>>> a9d7aec9f6facac24d063a817b019c5319417be4
+
+  .dropdown{
+    margin-top: -50px;
+    height: 55px;
+    width: 170px;
+    font-size: 25px;
+    border: none;
+    display: inline-block;
+    outline: 0;
+  }
