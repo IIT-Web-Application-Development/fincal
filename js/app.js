@@ -40,7 +40,7 @@ function calculate() {/*Main function to calculate everything.*/
         withoutTip /*update html */
     ).toFixed(2)}`;
 
-    
+
     perPersonTip = totalTip / splitTotal;/*Get the per person tip*/
     document.getElementById("total-tip-per-person").innerHTML = `$ ${parseFloat(
       perPersonTip
@@ -53,6 +53,36 @@ function calculate() {/*Main function to calculate everything.*/
     ).toFixed(2)}`;
 
 }
+
+document.getElementById("add-people").addEventListener("click", function() {
+    if (splitTotal < 99) {
+      splitTotal++;
+    } else {
+      splitTotal = 1;
+    }
+  });
+  document.getElementById("minus-people").addEventListener("click", function() {
+    if (splitTotal > 1) {
+      splitTotal--;
+    } else {
+      splitTotal = 99;
+    }
+  });
+  document.getElementById("add-percent").addEventListener("click", function() {
+    if (tipPercent < 100) {
+      tipPercent++;
+    } else {
+      tipPercent = 0;
+    }
+  });
+  document.getElementById("minus-percent").addEventListener("click", function() {
+    if (tipPercent > 0) {
+      tipPercent--;
+    } else {
+      tipPercent = 100;
+    }
+  
+  });
 
 
 calculate();
