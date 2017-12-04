@@ -265,19 +265,7 @@ input#bill-total {
     display: block;
     margin: auto;
   }
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 6b1d791699bc263b26d4fc447272136cd70109ed
 
-
-
-
-
-
-
-=======
-=======
->>>>>>> a9d7aec9f6facac24d063a817b019c5319417be4
 
 /*SAVINGS CALC*/
 
@@ -311,10 +299,7 @@ input.savingsin{
     color: white;
     outline: 0;
   }
-<<<<<<< HEAD
->>>>>>> a9d7aec9f6facac24d063a817b019c5319417be4
-=======
->>>>>>> a9d7aec9f6facac24d063a817b019c5319417be4
+
 
   .dropdown{
     margin-top: -50px;
@@ -325,3 +310,5 @@ input.savingsin{
     display: inline-block;
     outline: 0;
   }
+
+  
