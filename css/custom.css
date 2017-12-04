@@ -174,3 +174,20 @@ input#bill-total {
   #split-amount {
     font-size: 30px;
   }
+
+  .small-container {
+    height: 100px;
+  }
+
+  .tip-percentage-container {
+    text-align: center;
+  }
+
+  .tip-container {
+    font-size: 25px;
+    line-height: 100px;
+  }
+
+  #percentage {
+    font-size: 30px;
+  }
