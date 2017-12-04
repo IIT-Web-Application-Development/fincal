@@ -26,7 +26,44 @@
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="../img/plant.png">
+      <style type="text/css">
+            body{
+              width: 600px; 
+              border: 2px solid; 
+              margin: 50px auto; 
+            }
 
+            .investment-table {
+              background-color: green; 
+              padding: 60px 25px;
+            }
+
+            label {
+              float: left; 
+              width: 200px;
+            }
+
+            input {
+              width: 200px;
+            }
+
+            button{
+              float: left; 
+              width: auto;
+              background-color: #ffffff;
+              padding: 2px 3px 3px 3px;
+              margin: 10px;
+            }
+
+            
+
+            .output{
+              color: #ff0000;
+            }
+
+
+
+      </style>
 </head>
 <body>
 
@@ -36,26 +73,74 @@
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="table">
+<<<<<<< HEAD
+  <div class="investment-table">
     <h1>Investment Calculator</h1>
+    <p>This calculator can be used to calculate the end value of your investment.</p><br/><br/>
       <form id="inputForm">
       <label>Starting amount</label>
-        <span class="dollarSpan">
-          <input type="text" id="starting" size=20 style="float: left;" placeholder="0.00">
-        </span>
+        <input type="text" id="starting" size=20>
+      <label>Investment Rate</label>
+        <input type="text" id="percentage" size=20>
+      <label>Number of years</label>
+        <input type="text" id="year" size=20>
       </form>
+      <!-- buttons -->
+      <button type="button" onclick="calculate()">Calculate Investment</button>
+      <button type="button" id="button1" onclick="clear()">Clear Table</button>
+      <!-- output -->
+
+      <div class="output"></div>
+=======
+  <div class="container">
+    <div class="row">
+        <div class="title"> Investment Calculator</div>
+        <p>Type in your starting amount, the interest, and the time (calculated in years) you want to calculate it for.</p>
+        <div class="Inputs">
+          <table class="inputs">
+            <tbody>
+              <tr>
+                <td>
+                <div class="StartingInvestment">
+                  <div class="label">Starting Investment Amount:</div>
+                    <span class="dollarSpan">
+                      $<input type="text" id="dollar" placeholder="0.00">
+                    </span>
+                </div>
+                </td>
+                <td>
+                  <div class="InvestmentRate">
+                    <div class="label">Investment Rate:</div>
+                    <span class="percentageSpan">
+                      <input type="text" id="percentage" placeholder="0.0">%
+                    </span>
+                  </div>
+                </td>
+                <td>
+                  <div class="Years">
+                    <div class="label">Years:</div>
+                      <span class="yearsSpan">
+                        <input type="text" id="year" placeholder="0">
+                      </span>
+                  </div>
+                </td>
+                <td>
+                  <div class="Calculate">
+                    <button id=CalculateButton>Calculate</button>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+>>>>>>> a9d7aec9f6facac24d063a817b019c5319417be4
   </div>
 
   <!-- JS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <script type="text/javascript">
-      //Getting inputs
-      function calculate(){
-        var startingAmount = parseFloat(document.getElementById('starting'));
-        var rate = parseFloat(document.getElementById('percentage'));
-        var years = parseFloat(document.getElementById('year'));
-        console.log(startingAmount+rate);
-      }
+    console.log(document.getElementById("dollar").value);
   </script>
   <script type="text/javascript" src="../js/app.js"></script>
   <!-- End Document

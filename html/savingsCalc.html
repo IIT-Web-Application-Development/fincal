@@ -5,9 +5,9 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>Your page title here :)</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <title>FinCal</title>
+  <meta name="description" content="Financial calculators to help manage money">
+  <meta name="author" content="Team 4">
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -19,6 +19,7 @@
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="../css/fontawesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="../css/normalize.css">
   <link rel="stylesheet" href="../css/skeleton.css">
   <link rel="stylesheet" href="../css/custom.css">
@@ -27,29 +28,70 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/favicon.png">
 
+
 </head>
 <body>
+  <!--Load Navigation bar-->
 
-    <!--Load Navigation bar-->
-
-    <div id="navbar"></div>
+  <div id="navbar"></div>
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="container">
-    <div class="row">
-      <div class="one-half column" style="margin-top: 25%">
-        <h4>Basic Page</h4>
-        <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the <a href="http://www.getskeleton.com">Skeleton documentation</a>.</p>
-      </div>
+
+
+  <!--layout design ideas where inspired by codepen.io examples-->
+  <div class="calculator-container">
+    <div class="bill-amount-container big-containerSav"> <!--Top portion-->
+      <h1 class="savingHead">Savings Calculator</h1>
     </div>
+    
+  <span class="bill-amount">Spending: </span>
+  <div class="tip-save-container small-container">
+      <input type="text" class="savingsin" maxlength="7" placeholder="0.00">
+      <select class="dropdown" id="dropdown1">
+          <option value="Option 1">Weekly</option>
+          <option value="Option 2">Monthly</option>
+          <option value="Option 3">Yearly</option>
+        </select>
+      <input type="text" class="savingsin" maxlength="7" placeholder="0.00">
+      <select class="dropdown" id="dropdown1">
+          <option value="Option 1">Weekly</option>
+          <option value="Option 2">Monthly</option>
+          <option value="Option 3">Yearly</option>
+      </select>
+      <input type="text" class="savingsin" maxlength="7" placeholder="0.00">
+      <select class="dropdown" id="dropdown1">
+          <option value="Option 1">Weekly</option>
+          <option value="Option 2">Monthly</option>
+          <option value="Option 3">Yearly</option>
+      </select>
+      <input type="text" class="savingsin" maxlength="7" placeholder="0.00">
+      <select class="dropdown" id="dropdown1">
+          <option value="Option 1">Weekly</option>
+          <option value="Option 2">Monthly</option>
+          <option value="Option 3">Yearly</option>
+      </select>
+      <input type="text" class="savingsin" maxlength="7" placeholder="0.00">
+      <select class="dropdown" id="dropdown1">
+          <option value="Option 1">Weekly</option>
+          <option value="Option 2">Monthly</option>
+          <option value="Option 3">Yearly</option>
+      </select>
+  </div>
+  <div class="totals-container big-container">
+  </div>
+
+    <div class="tip-total-container">
+      <span class="tip-per-person">Total Savings:</span> <span id="total-tip-per-person">$0.00</span>
+    </div>
+  </div>
   </div>
 
   <!-- JS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
   <script type="text/javascript" src="../js/app.js"></script>
-  <!-- End Document
+<!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
 </html>
