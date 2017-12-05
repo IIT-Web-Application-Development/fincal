@@ -28,11 +28,11 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="../img/plant.png">
       <style type="text/css">
-            body{
+
+            .fakeBody{
               width: 650px;  
               margin: 50px auto; 
             }
-
             .investment-table {
               background-color: green; 
               padding: 60px 25px;
@@ -74,10 +74,18 @@
 
     <!--Load Navigation bar-->
 
-    <div id="navbar"></div>
+    <div id="navbar">
+      
+    <div onclick="location.href='../html/index.html';" style="cursor: pointer;"class="outsidebox">
+    <div class="insidebox">
+          <a href="../../index.html"> <img src="../img/favicon.png" alt=""> FinCal Home</a>  
+    </div>
+    </div>
+    </div>
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="fakeBody">
   <div class="investment-table">
     <h1>Investment Calculator</h1>
     <p>This calculator can be used to calculate the end value of your investment.</p><br/><br/>
@@ -100,12 +108,14 @@
       <div id="Investment_Table"></div>
 
   </div>
+</div>
 
 
 
 
   <!-- JS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
   <script type="text/javascript">
   function calculateInvestment(){
     // ------------------- Grabbing Inputs -------------
