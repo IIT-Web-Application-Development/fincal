@@ -43,11 +43,7 @@
               width: 200px;
             }
 
-            input {
-              width: 200px;
-              font-size: 20px;
-              padding: 4px;
-            }
+           
 
             button{
               float: left; 
@@ -58,7 +54,11 @@
               margin: 10px;
             }
 
-            
+            #input-wrapper input{
+              width: 200px;
+              font-size: 20px;
+              padding: 4px;
+            }
 
             .output{
               width: auto;
@@ -89,6 +89,7 @@
     <h1>Investment Calculator</h1>
     <p>This calculator can be used to calculate the end value of your investment.</p><br/><br/>
       <form id="inputForm">
+      <div id="input-wrapper">
       <label>Starting amount ($)</label>
         <input type="text" id="starting" name="starting"><br/>
       <label>Investment Rate(%)</label>
@@ -96,9 +97,10 @@
       <label>Number of years</label>
         <input type="text" id="year" name="year" ><br/>
       </form>
+      </div>
       <!-- buttons -->
         <button type="button" onclick="calculateInvestment()">Calculate Investment</button>
-        <button type="button" id="button1" onclick="clear()">Clear Table</button><br/><br/><br/><br/>
+        <button type="button" onclick="erase()">Clear Table</button><br/><br/><br/><br/>
       <!-- output -->
 
       <div class="output" id="results"></div><br/><br/><br/><br/>
@@ -141,6 +143,13 @@
     document.getElementById('Investment_Table').innerHTML = table;
     document.getElementById('results').innerHTML = 'Investment Total After ' + years + ' year(s) is $' + Math.round(result);
 
+  }
+
+  //-------------- CLEARING DATA VALUES --------
+  function erase() {
+    document.getElementById('starting').value = '';
+    document.getElementById('percentage').value = '';
+    document.getElementById('year').value = '';
   }
   </script>
 
