@@ -93,20 +93,34 @@ calculate();
 /*END OF TIP CALC STUFF*/
 
 /*SAVINGS CALC STUFF*/
-function getStuff() {/*get total number of people from UI*/
+function getSavings() {/*get total number of people from UI*/
     savingsOne = document.getElementById("savingsOne").value;
     savingsTwo = document.getElementById("savingsTwo").value;
     savingsThree = document.getElementById("savingsThree").value;
     savingsFour = document.getElementById("savingsFour").value;
     savingsFive = document.getElementById("savingsFive").value;
     
+
+}
+
+function getTime() {
     dOne = document.getElementById("dOne").value;
     dTwo = document.getElementById("dTwo").value;
     dThree = document.getElementById("dThree").value;
     dFour = document.getElementById("dFour").value;
     dFive = document.getElementById("dFive").value;
+    
 }
 
+function numChecker(number) {
+
+    if(isNaN(number)){
+        
+     }else{
+        alert("Only enter numbers.");
+     }
+    
+}
 function processorCalc(sav, drop) {
 
     if (drop == "Weekly") {
@@ -124,16 +138,18 @@ function processorCalc(sav, drop) {
     
 }
 
-
-
 function savingsCalc() {
-    getStuff();
+    getSavings();
+    getTime();
 
     one = processorCalc(savingsOne, dOne);
     two = processorCalc(savingsTwo, dTwo);
     three = processorCalc(savingsThree, dThree);
     four = processorCalc(savingsFour, dFour);
     five = processorCalc(savingsFive, dFive);
+
+    numChecker(one);
+
 
 
     total = one + two + three + four + five;
