@@ -93,17 +93,53 @@ calculate();
 /*END OF TIP CALC STUFF*/
 
 /*SAVINGS CALC STUFF*/
+function getStuff() {/*get total number of people from UI*/
+    savingsOne = document.getElementById("savingsOne").value;
+    savingsTwo = document.getElementById("savingsTwo").value;
+    savingsThree = document.getElementById("savingsThree").value;
+    savingsFour = document.getElementById("savingsFour").value;
+    savingsFive = document.getElementById("savingsFive").value;
+    
+    dOne = document.getElementById("dOne").value;
+    dTwo = document.getElementById("dTwo").value;
+    dThree = document.getElementById("dThree").value;
+    dFour = document.getElementById("dFour").value;
+    dFive = document.getElementById("dFive").value;
+}
 
-function spendingOne() {/*get total number of people from UI*/
-    document.getElementById("split-amount").innerHTML = splitTotal;   
+function processorCalc(sav, drop) {
+
+    if (drop == "Weekly") {
+        yearly = sav * 52;
+        console.log(yearly);
+    } else if (drop == "Monthly"){
+        yearly = sav * 12;
+        console.log(yearly);
+    } else {
+        yearly = sav * 1;
+        console.log(yearly);
+    } 
+
+    return yearly;
+    
 }
 
 
+
 function savingsCalc() {
-    console.log("Test")
+    getStuff();
+
+    one = processorCalc(savingsOne, dOne);
+    two = processorCalc(savingsTwo, dTwo);
+    three = processorCalc(savingsThree, dThree);
+    four = processorCalc(savingsFour, dFour);
+    five = processorCalc(savingsFive, dFive);
 
 
+    total = one + two + three + four + five;
+    console.log(total);
 
+    document.getElementById("total-tip-per-person").innerHTML = `$${total}`;   
 }
 
 
