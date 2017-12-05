@@ -107,26 +107,39 @@ function getStuff() {/*get total number of people from UI*/
     dFive = document.getElementById("dFive").value;
 }
 
-function processorCalc(params) {
+function processorCalc(sav, drop) {
 
-    if (dOne == "Weekly") {
-        yearly = savingsOne * 52;
+    if (drop == "Weekly") {
+        yearly = sav * 52;
+        console.log(yearly);
+    } else if (drop == "Monthly"){
+        yearly = sav * 12;
         console.log(yearly);
     } else {
-        console.log("esketit")
-    }
+        yearly = sav * 1;
+        console.log(yearly);
+    } 
+
+    return yearly;
     
 }
 
 
+
 function savingsCalc() {
     getStuff();
-    console.log(savingsOne, savingsTwo, savingsThree, savingsFour, savingsFive);
 
-    console.log(dOne, dTwo, dThree, dFour);
+    one = processorCalc(savingsOne, dOne);
+    two = processorCalc(savingsTwo, dTwo);
+    three = processorCalc(savingsThree, dThree);
+    four = processorCalc(savingsFour, dFour);
+    five = processorCalc(savingsFive, dFive);
 
 
+    total = one + two + three + four + five;
+    console.log(total);
 
+    document.getElementById("total-tip-per-person").innerHTML = `$${total}`;   
 }
 
 
