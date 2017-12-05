@@ -173,7 +173,7 @@ $(document).ready(function() {
     $.get($link, function(data, status){
       data.forEach(function (blah) {
         var $output = $("<li>");
-        $output.text("Amountname: " + blah.amountname + " Amount: " + blah.amount + " Created: " + blah.created)
+        $output.html("Amountname: " + blah.amountname + " Amount: " + blah.amount + " Created: " + blah.created)
         $(".output").append($output);
       });
     });
@@ -190,18 +190,22 @@ $(document).ready(function() {
     $.get($link, function(data, status){
       data.forEach(function (blah) {
         var $output = $("<li>");
-        $output.text("Amountname: " + blah.amountname + " Amount: " + blah.amount + " Created: " + blah.created)
-        $(".root").append($output);
+        $output.html("Amountname: " + blah.amountname + " Amount: " + blah.amount + " Created: " + blah.created +
+          "<div><p id='paid'>Unpaid</p><button id='Mark2' onclick='myfunction()'>Paid it</button></div>")
+        $(".output").append($output);
       });
     });
   }
-  $('#markit button').on('click', function(){
-    var $field1 = $('.mark');
+  function myfunction(){
+     document.getElementById('paid').innerHTML = "Paid It";
+  }
+
+  $('#Mark1').on('click', function(){
+    var $field1 = $('.markbalance');
     var $id = $field1.val();
     $field1.val("");
     markplease($id);
   })
   $(".clear").on("click", function() {
     $(".output").html("");
-    $(".input").val("");
   });
