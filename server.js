@@ -2,6 +2,9 @@ const http = require('http');
 const url = require('url');
 const fs = require('fs');
 const path = require('path');
+const app = express()
+
+app.use(bodyParser.json());
 // you can pass the parameter in the command line. e.g. node static_server.js 3000
 const port = process.argv[2] || 9000;
 
@@ -57,6 +60,13 @@ http.createServer(function (req, res) {
 }).listen(parseInt(port));
 
 console.log(`Server listening on port ${port}`);
+app.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With,  X-HTTP-Method-Override, Content-Type, Accept");
+  res.header("Access-Control-Allow-Methods", "POST, GET, PUT, DELETE, OPTIONS");
+  next();
+});
+
 
 //CAN DO THE APP.GET/PUT/USE etc UNDERNEATH THIS
 

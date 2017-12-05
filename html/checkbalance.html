@@ -2,12 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Reminders App</title>
+  <title>Balances App</title>
   <meta name="description" content="">
   <meta name="author" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
   <link rel="stylesheet" type="text/css" href="../css/css.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/skeleton.css">
+  <link rel="stylesheet" href="../css/custom.css">
 
 </head>
 <body>
@@ -28,7 +31,6 @@
         </div>
 
     <div id="Add" class="tabcontent">
-      <!--ADD USER-->
       <div  id="adduser">
         <h5>Add a New User: </h5>
         <label for="name">Name: </label><br>
@@ -37,7 +39,6 @@
           <input type="text" placeholder="XXX@hawk.iit.edu" class="addemail input" /><br>
         <button>Add User</button>
         </div>
-      <!--ADD REMINDER-->
         <div role="tabpanel" id="addbalance">
           <h5>Add Balance: </h5>
           <label>Amount name:</label><br>
@@ -49,8 +50,6 @@
           <button>Add Balance</button>
         </div>
     </div>
-
-      <!--DELETE USER-->
     <div id="Remove" class="tabcontent">
         <div id="deleteuser">
             <h5>Delete User: </h5>
@@ -69,7 +68,7 @@
           </div>
 
           <div id="deleteall">
-            <h5>Delete All Reminders: </h5>
+            <h5>Delete All Balances: </h5>
               <label>User ID:</label><br>
               <input type="text" placeholder="1" class="delall input" /><br>
               <button>Delete All</button>
