@@ -28,7 +28,7 @@
   <link rel="icon" type="image/png" href="../img/plant.png">
       <style type="text/css">
             body{
-              width: 550px;  
+              width: 650px;  
               margin: 50px auto; 
             }
 
@@ -46,6 +46,7 @@
             input {
               width: 200px;
               font-size: 20px;
+              padding: 4px;
             }
 
             button{
@@ -60,7 +61,8 @@
             
 
             .output{
-              color: #ff0000;
+              width: auto;
+              color: black;
             }
 
 
@@ -79,31 +81,56 @@
     <h1>Investment Calculator</h1>
     <p>This calculator can be used to calculate the end value of your investment.</p><br/><br/>
       <form id="inputForm">
-      <label>Starting amount</label>
+      <label>Starting amount ($)</label>
         <input type="text" id="starting" name="starting"><br/>
-      <label>Investment Rate</label>
-        <input type="text" id="percentage"><br/>
+      <label>Investment Rate(%)</label>
+        <input type="text" id="percentage" name="percentage"><br/>
       <label>Number of years</label>
-        <input type="text" id="year"><br/>
+        <input type="text" id="year" name="year" ><br/>
       </form>
       <!-- buttons -->
-        <button type="button" onclick="calculate()">Calculate Investment</button>
-        <button type="button" id="button1" onclick="clear()">Clear Table</button>
+        <button type="button" onclick="calculateInvestment()">Calculate Investment</button>
+        <button type="button" id="button1" onclick="clear()">Clear Table</button><br/><br/><br/><br/>
       <!-- output -->
 
-      <div class="output"></div>
+      <div class="output" id="results"></div><br/><br/><br/><br/>
+      <div id="Investment_Table"></div>
+
   </div>
+
+
+
 
   <!-- JS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <script type="text/javascript">
-  function calculate(){
+  function calculateInvestment(){
     // ------------------- Grabbing Inputs -------------
-    var starting = document.getElementById('starting');
-    var rate = parseFloat(document.getElementById('percentage'));
-    var years = parseFloat(document.getElementById('year'));
+    var starting = parseFloat(document.getElementById('starting').value);
+    var rate = parseFloat(document.getElementById('percentage').value);
+    var years = parseFloat(document.getElementById('year').value);
+    var table="<table>";
+    //------------- CONVERTING PERCENTAGE TO DECIMAL------------
+    var percentage = rate/100;
 
-    console.log(2);
+    console.log(percentage);
+
+    //------------- CALCULATING END RESULT -----------------
+    var result = starting * Math.pow(1 + percentage, years);
+    //testing calculation
+    console.log(result);
+    console.log('----------');
+    //------------ CALCULATING YEARLY & ADDING HTML FOR TABLE ----------
+    for(var i=0; i < years; i++){
+    var test = starting * Math.pow(1 + percentage, 1);
+    console.log(test);
+      table= table + "<tr>Year " + i +" | Starting Amount: $" + Math.round(starting) + " | Interest: " + rate + "% | Total: $ " + Math.round(test) + "</tr><br>";
+      starting = test;
+    }
+    table= table + "</table>";
+    document.getElementById('Investment_Table').innerHTML = table;
+    document.getElementById('results').innerHTML = 'Investment Total After ' + years + ' year(s) is $' + Math.round(result);
+
   }
   </script>
   <!-- End Document
