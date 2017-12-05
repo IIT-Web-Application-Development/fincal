@@ -112,15 +112,6 @@ function getTime() {
     
 }
 
-function numChecker(number) {
-
-    if(isNaN(number)){
-        
-     }else{
-        alert("Only enter numbers.");
-     }
-    
-}
 function processorCalc(sav, drop) {
 
     if (drop == "Weekly") {
@@ -147,10 +138,6 @@ function savingsCalc() {
     three = processorCalc(savingsThree, dThree);
     four = processorCalc(savingsFour, dFour);
     five = processorCalc(savingsFive, dFive);
-
-    numChecker(one);
-
-
 
     total = one + two + three + four + five;
     console.log(total);
