@@ -1,6 +1,6 @@
 {
     "name": "FinCal",
-    "version": "1.0",
+    "version": "1.0.0",
     "description": "Financial App Helped",
     "main": "index.html",
     "scripts": {
