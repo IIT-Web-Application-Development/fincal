@@ -1,0 +1,27 @@
+h1{
+	text-align: center;
+}
+h4{
+	text-align: center;
+}
+.tab{
+	text-align: center;
+}
+.tablinks{
+	border-color: red;
+	border-width: 3px;
+	background: yellow;
+}
+.tabcontent{
+	text-align: center;
+}
+.output{
+	text-align: center;
+	font-style: Arial Sans-serif;
+	font-size: 20px;
+	border: 10px;
+}
+.clear{
+	text-align: center;
+	margin-top: 50px;
+}

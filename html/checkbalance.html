@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Reminders App</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="../css/css.css">
+
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="main">
+      <header>
+        <h1>Account Balance check in system</h1>
+        <h4>Manage your balance</h4>
+      </header>
+
+  <main>
+      <div class="tab">
+          <button class="tablinks" id="defaultOpen" onclick="openCity(event, 'Add')">Add</button>
+          <button class="tablinks" onclick="openCity(event, 'Remove')">Remove</button>
+          <button class="tablinks" onclick="openCity(event, 'Search')">Search</button>
+          <button class="tablinks" onclick="openCity(event, 'View')">View</button>
+        </div>
+
+    <div id="Add" class="tabcontent">
+      <!--ADD USER-->
+      <div  id="adduser">
+        <h5>Add a New User: </h5>
+        <label for="name">Name: </label><br>
+          <input type="text" placeholder="XXX" class="addname input" /><br>
+        <label for="email">Email: </label><br>
+          <input type="text" placeholder="XXX@hawk.iit.edu" class="addemail input" /><br>
+        <button>Add User</button>
+        </div>
+      <!--ADD REMINDER-->
+        <div role="tabpanel" id="addbalance">
+          <h5>Add Balance: </h5>
+          <label>Amount name:</label><br>
+            </label><input type="text" placeholder="Name of people save this money" class="addaname input" /><br>
+          <label>Amount:</label><br>
+            </label><input type="text" placeholder="your money amount" class="money input"/><br>
+          <label>UserId:</label><br>
+            <input type="text" placeholder="5" class="userid input"/><br>
+          <button>Add Balance</button>
+        </div>
+    </div>
+
+      <!--DELETE USER-->
+    <div id="Remove" class="tabcontent">
+        <div id="deleteuser">
+            <h5>Delete User: </h5>
+              <label>UserID:</label><br>
+              <input type="text" placeholder="1" class="deluserid input" /><br>
+              <button>Delete</button>
+        </div>
+
+        <div id="deletebalance">
+          <h5>Delete Reminder: </h5>
+            <label>UserID</label><br>
+            <input type="text" placeholder="1" class="deluser input" /><br>
+            <label>Reminder ID:</label><br>
+            <input type="text" placeholder="2" class="delbal input" /><br>
+            <button>Delete</button>
+          </div>
+
+          <div id="deleteall">
+            <h5>Delete All Reminders: </h5>
+              <label>User ID:</label><br>
+              <input type="text" placeholder="1" class="delall input" /><br>
+              <button>Delete All</button>
+          </div>
+    </div>
+
+    <div id="Search" class="tabcontent">
+        <div id="searchuser">
+          <h5>Search User:</h5>
+            <label>User ID: </label><br>
+              <input type="text" placeholder="12" class="searchuser input"/><br>
+            <button>Search</button>
+        </div>
+
+        <div id="searchbalance">
+          <h5>Search Balance</h5>
+            <label>UserID:</label><br>
+            <input type="text" placeholder="1" class="search input" /><br>
+            <label>Balance ID:</label><br>
+            <input type="text" placeholder="2" class="searchbal input" /><br>
+            <button>Search</button>
+          </div>
+      </div>
+
+      <div id="View" class="tabcontent">
+      <div role="tabpanel" class="tab-pane" id="viewbalances">
+        <h5>View Balances: </h5>
+          <label>User ID:
+            </label><input type="text" class="viewbalance input"/>
+          <button>View Balances</button>
+        </div>
+        </div>
+        
+        
+
+
+
+    
+
+      
+      
+
+
+    </div>
+    <div class="output"></div>
+    <div class="clear"><button>Clear</button></div>
+  </main>
+
+
+        
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <!-- <script src="server.js"></script> -->
+  <script src="../js/checkbalance.js"></script>
+
+  <script>
+      function openCity(evt, cityName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+              tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+              tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active";
+      }
+      
+      // Get the element with id="defaultOpen" and click on it
+      document.getElementById("defaultOpen").click();
+      </script>
+
+</body>
+</html>
