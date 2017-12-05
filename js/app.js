@@ -93,14 +93,37 @@ calculate();
 /*END OF TIP CALC STUFF*/
 
 /*SAVINGS CALC STUFF*/
+function getStuff() {/*get total number of people from UI*/
+    savingsOne = document.getElementById("savingsOne").value;
+    savingsTwo = document.getElementById("savingsTwo").value;
+    savingsThree = document.getElementById("savingsThree").value;
+    savingsFour = document.getElementById("savingsFour").value;
+    savingsFive = document.getElementById("savingsFive").value;
+    
+    dOne = document.getElementById("dOne").value;
+    dTwo = document.getElementById("dTwo").value;
+    dThree = document.getElementById("dThree").value;
+    dFour = document.getElementById("dFour").value;
+    dFive = document.getElementById("dFive").value;
+}
 
-function spendingOne() {/*get total number of people from UI*/
-    document.getElementById("split-amount").innerHTML = splitTotal;   
+function processorCalc(params) {
+
+    if (dOne == "Weekly") {
+        yearly = savingsOne * 52;
+        console.log(yearly);
+    } else {
+        console.log("esketit")
+    }
+    
 }
 
 
 function savingsCalc() {
-    console.log("Test")
+    getStuff();
+    console.log(savingsOne, savingsTwo, savingsThree, savingsFour, savingsFive);
+
+    console.log(dOne, dTwo, dThree, dFour);
 
 
 
